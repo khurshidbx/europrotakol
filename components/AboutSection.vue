@@ -12,70 +12,50 @@
         </p>
       </div>
 
-      <!-- Split layout -->
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
-
-        <!-- Left: text content -->
-        <div class="space-y-6">
+      <!-- About items -->
+      <div class="space-y-5 mb-16 max-w-2xl mx-auto">
+        <div
+          v-for="item in aboutItems"
+          :key="item.title"
+          class="flex items-start gap-4 group"
+        >
           <div
-            v-for="item in aboutItems"
-            :key="item.title"
-            class="flex items-start gap-4 group"
+            :class="['w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0 transition-colors duration-200', item.bg, `group-hover:${item.bgHover}`]"
           >
-            <div
-              :class="['w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0 transition-colors duration-200', item.bg, `group-hover:${item.bgHover}`]"
-            >
-              <svg
-                :class="['w-6 h-6 transition-colors duration-200', item.color, `group-hover:${item.colorHover}`]"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                v-html="item.icon"
-              />
-            </div>
-            <div>
-              <h3 class="font-bold text-gray-900 text-lg mb-1">{{ item.title }}</h3>
-              <p class="text-gray-500 text-sm leading-relaxed">{{ item.desc }}</p>
-            </div>
+            <svg
+              :class="['w-6 h-6 transition-colors duration-200', item.color, `group-hover:${item.colorHover}`]"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              v-html="item.icon"
+            />
           </div>
-        </div>
-
-        <!-- Right: stats card -->
-        <div class="bg-primary-900 rounded-3xl p-8 text-white">
-          <p class="text-primary-200 text-sm font-medium uppercase tracking-widest mb-8">
-            Bizning natijalarimiz
-          </p>
-          <div class="grid grid-cols-2 gap-6">
-            <div
-              v-for="stat in stats"
-              :key="stat.label"
-              class="bg-white/10 rounded-2xl p-5 hover:bg-white/15 transition-colors"
-            >
-              <div class="text-3xl font-extrabold text-white mb-1">{{ stat.value }}</div>
-              <div class="text-primary-200 text-sm leading-snug">{{ stat.label }}</div>
-            </div>
-          </div>
-
-          <div class="mt-8 pt-6 border-t border-white/20">
-            <!-- <p class="text-primary-100 text-sm leading-relaxed italic">
-              "Mijozlarimizning 98% sug'urta kompaniyasiga hujjatini muvaffaqiyatli topshirgan."
-            </p> -->
+          <div>
+            <h3 class="font-bold text-gray-900 text-lg mb-1">{{ item.title }}</h3>
+            <p class="text-gray-500 text-sm leading-relaxed">{{ item.desc }}</p>
           </div>
         </div>
       </div>
 
       <!-- Values row -->
-      <div class="grid grid-cols-1 sm:grid-cols-3 gap-5">
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
         <div
           v-for="val in values"
           :key="val.title"
-          class="card text-center group"
+          class="relative text-center group rounded-2xl px-6 py-8 overflow-hidden"
+          style="background: #1e3a8a"
         >
-          <div :class="['text-4xl mb-3 transition-transform duration-300 group-hover:scale-110 inline-block']">
-            {{ val.emoji }}
+          <div
+            class="absolute inset-0"
+            style="background-image: radial-gradient(circle at 20% 40%, #60a5fa44 0%, transparent 60%), radial-gradient(circle at 80% 70%, #f9731633 0%, transparent 50%)"
+          />
+          <div class="relative z-10">
+            <div class="text-4xl mb-3 transition-transform duration-300 group-hover:scale-110 inline-block">
+              {{ val.emoji }}
+            </div>
+            <h3 class="font-bold text-white mb-2">{{ val.title }}</h3>
+            <p class="text-blue-200 text-sm leading-relaxed">{{ val.desc }}</p>
           </div>
-          <h3 class="font-bold text-gray-900 mb-2">{{ val.title }}</h3>
-          <p class="text-gray-500 text-sm leading-relaxed">{{ val.desc }}</p>
         </div>
       </div>
 
@@ -113,13 +93,6 @@ const aboutItems = [
     bg: 'bg-purple-50', bgHover: 'bg-purple-100',
     color: 'text-purple-600', colorHover: 'text-purple-700',
   },
-]
-
-const stats = [
-  { value: '50 000+', label: 'Rasmiylashtirilgan hodisalar' },
-  { value: '98%', label: "Sug'urta qabul qilgan" },
-  { value: '15 daq', label: "O'rtacha vaqt" },
-  { value: '5 yil', label: 'Bozordagi tajriba' },
 ]
 
 const values = [

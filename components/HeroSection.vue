@@ -28,7 +28,7 @@
         <!-- H1 — single keyword-rich headline -->
         <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white mb-6 leading-[1.1] tracking-tight">
           <!-- Yevroprotokol — -->
-          <span class="text-orange-400">Yo'l transport hodisasi</span>
+          <span class="text-orange-400">Yo'l transport hodisasini</span>
           <br class="hidden sm:block" />
           biz bilan Rasmiylashtiring
         </h1>
@@ -40,8 +40,8 @@
         </p>
 
         <!-- CTA Buttons -->
-        <div class="flex flex-col sm:flex-row gap-4 justify-center mb-16">
-          <a href="#services" class="btn-outline-white !text-xl !px-10 !py-5 !rounded-2xl">
+        <div class="flex flex-wrap gap-4 justify-center mb-16">
+          <a href="#services" class="btn-outline-white !text-sm !px-5 !py-3 sm:!text-xl sm:!px-10 sm:!py-5 !rounded-xl sm:!rounded-2xl">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                 d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"

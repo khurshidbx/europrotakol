@@ -59,20 +59,17 @@ const toggle = (i: number) => {
             </span>
           </button>
 
-          <Transition
-            enter-active-class="transition-all duration-300 ease-out overflow-hidden"
-            leave-active-class="transition-all duration-200 ease-in overflow-hidden"
-            @enter="(el) => { (el as HTMLElement).style.maxHeight = el.scrollHeight + 'px' }"
-            @leave="(el) => { (el as HTMLElement).style.maxHeight = '0px' }"
-            @after-leave="(el) => { (el as HTMLElement).style.maxHeight = '' }"
-            @before-enter="(el) => { (el as HTMLElement).style.maxHeight = '0px' }"
+          <div
+            class="overflow-hidden"
+            :style="{
+              maxHeight: openIndex === i ? '400px' : '0px',
+              transition: 'max-height 0.3s ease',
+            }"
           >
-            <div v-if="openIndex === i">
-              <div class="px-6 pb-6 text-gray-600 text-sm leading-relaxed border-t border-gray-100 pt-4">
-                {{ faq.answer }}
-              </div>
+            <div class="px-6 pb-6 text-gray-600 text-sm leading-relaxed border-t border-gray-100 pt-4">
+              {{ faq.answer }}
             </div>
-          </Transition>
+          </div>
         </div>
       </div>
 

@@ -43,13 +43,6 @@
         </div>
       </div>
 
-      <!-- Trust bar -->
-      <div class="mt-14 bg-primary-900 rounded-2xl p-8 grid grid-cols-2 md:grid-cols-4 gap-6">
-        <div v-for="metric in trustMetrics" :key="metric.label" class="text-center">
-          <div class="text-3xl font-extrabold text-white mb-1">{{ metric.value }}</div>
-          <div class="text-primary-200 text-sm">{{ metric.label }}</div>
-        </div>
-      </div>
     </div>
   </section>
 </template>
@@ -85,10 +78,4 @@ const testimonials = [
   },
 ]
 
-const trustMetrics = [
-  { value: '50 000+', label: 'Hujjat rasmiylashtirildi' },
-  { value: '4.9/5', label: "O'rtacha baho" },
-  { value: '98%', label: "Sug'urta qabul qilgan" },
-  { value: '15 daq', label: "O'rtacha vaqt" },
-]
 </script>

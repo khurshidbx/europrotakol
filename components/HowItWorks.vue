@@ -51,8 +51,7 @@
       <!-- Photo carousel -->
       <div class="mt-20">
         <div class="text-center mb-8">
-          <span class="section-tag">Galereya</span>
-          <h3 class="text-2xl md:text-3xl font-bold text-gray-900">Mijozlarimiz bilan</h3>
+          <h3 class="text-2xl md:text-3xl font-bold text-gray-900">Bizning mijozlarimiz</h3>
         </div>
 
         <div class="relative overflow-hidden rounded-3xl shadow-xl bg-gray-100 select-none">

@@ -11,26 +11,24 @@ const navLinks = [
 ]
 
 const sectionIds = navLinks.map((l) => l.href.replace('#', ''))
+const observers: IntersectionObserver[] = []
 
 onMounted(() => {
-  const observers: IntersectionObserver[] = []
-
   sectionIds.forEach((id) => {
     const el = document.getElementById(id)
     if (!el) return
-
     const obs = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) activeSection.value = id
-      },
+      ([entry]) => { if (entry.isIntersecting) activeSection.value = id },
       { rootMargin: '-30% 0px -60% 0px', threshold: 0 }
     )
     obs.observe(el)
     observers.push(obs)
   })
-
-  onUnmounted(() => observers.forEach((o) => o.disconnect()))
 })
+
+onUnmounted(() => observers.forEach((o) => o.disconnect()))
+
+const closeMenu = () => { isMenuOpen.value = false }
 </script>
 
 <template>
@@ -162,60 +160,48 @@ onMounted(() => {
     </div>
 
     <!-- Mobile Menu -->
-    <Transition
-      enter-active-class="transition-all duration-200 ease-out"
-      enter-from-class="opacity-0 -translate-y-2"
-      enter-to-class="opacity-100 translate-y-0"
-      leave-active-class="transition-all duration-150 ease-in"
-      leave-from-class="opacity-100 translate-y-0"
-      leave-to-class="opacity-0 -translate-y-2"
+    <div
+      class="lg:hidden overflow-hidden bg-white shadow-lg"
+      :style="{
+        maxHeight: isMenuOpen ? '400px' : '0px',
+        borderTop: isMenuOpen ? '1px solid #f3f4f6' : 'none',
+        transition: 'max-height 0.3s ease',
+      }"
     >
-      <div
-        v-if="isMenuOpen"
-        class="lg:hidden bg-white border-t border-gray-100 shadow-lg"
-      >
-        <nav class="container-xl flex flex-col py-4 gap-1">
-          <a
-            v-for="link in navLinks"
-            :key="link.href"
-            :href="link.href"
-            @click="isMenuOpen = false"
+      <nav class="container-xl flex flex-col py-4 gap-1">
+        <a
+          v-for="link in navLinks"
+          :key="link.href"
+          :href="link.href"
+          @click="closeMenu"
+          :class="[
+            'font-semibold px-3 py-3 rounded-lg transition-colors flex items-center gap-2',
+            activeSection === link.href.replace('#', '')
+              ? 'bg-primary-50 text-primary-700'
+              : 'text-gray-600 hover:bg-gray-50 hover:text-primary-700',
+          ]"
+        >
+          <span
             :class="[
-              'font-semibold px-3 py-3 rounded-lg transition-colors flex items-center gap-2',
-              activeSection === link.href.replace('#', '')
-                ? 'bg-primary-50 text-primary-700'
-                : 'text-gray-600 hover:bg-gray-50 hover:text-primary-700',
+              'w-1.5 h-1.5 rounded-full flex-shrink-0 transition-colors',
+              activeSection === link.href.replace('#', '') ? 'bg-primary-700' : 'bg-gray-300',
             ]"
-          >
-            <span
-              :class="[
-                'w-1.5 h-1.5 rounded-full flex-shrink-0 transition-colors',
-                activeSection === link.href.replace('#', '') ? 'bg-primary-700' : 'bg-gray-300',
-              ]"
+          />
+          {{ link.label }}
+        </a>
+        <a
+          href="tel:+998992014141"
+          @click="closeMenu"
+          class="flex items-center justify-center gap-2 bg-primary-700 text-white px-4 py-3 rounded-xl font-bold text-base mt-3"
+        >
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
             />
-            {{ link.label }}
-          </a>
-          <a
-            href="tel:+998992014141"
-            class="flex items-center justify-center gap-2 bg-primary-700 text-white px-4 py-3 rounded-xl font-bold text-base mt-3"
-          >
-            <svg
-              class="w-5 h-5"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
-              />
-            </svg>
-            +998 99 201 41 41
-          </a>
-        </nav>
-      </div>
-    </Transition>
+          </svg>
+          +998 99 201 41 41
+        </a>
+      </nav>
+    </div>
   </header>
 </template>

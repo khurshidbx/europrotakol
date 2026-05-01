@@ -23,10 +23,10 @@
         </p>
 
         <!-- CTA Buttons -->
-        <div class="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+        <div class="flex flex-wrap gap-4 justify-center mb-12">
           <a
             href="tel:+998712000000"
-            class="btn-cta !text-xl !px-12 !py-5 !rounded-2xl shadow-2xl shadow-orange-900/30"
+            class="btn-cta !text-sm !px-5 !py-3 sm:!text-xl sm:!px-12 sm:!py-5 !rounded-xl sm:!rounded-2xl shadow-2xl shadow-orange-900/30"
           >
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -37,7 +37,7 @@
           </a>
           <a
             href="tel:+998712000000"
-            class="btn-outline-white !text-xl !px-12 !py-5 !rounded-2xl"
+            class="btn-outline-white !text-sm !px-5 !py-3 sm:!text-xl sm:!px-12 sm:!py-5 !rounded-xl sm:!rounded-2xl"
           >
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"

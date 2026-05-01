@@ -54,7 +54,7 @@ useSeoMeta({
     "Yevroprotokol xizmati yordamida yo'l-transport hodisasini politsiyasiz 15 daqiqada rasmiylashtiiring. Avtohalokat hujjati tez, qonuniy va bepul. Yevropa protokol xizmati O'zbekistonda.",
   ogTitle: "Yevroprotokol — Avtohalokatni Tez Rasmiylashtiiring",
   ogDescription:
-    "Kichik yo'l-transport hodisalarida 15 daqiqada rasmiy avtohalokat hujjati tayyorlang. Bepul va qonuniy.",
+    "Kichik yo'l-transport hodisalarida 15 daqiqada rasmiy hujjat tayyorlang. Bepul va qonuniy.",
   ogType: 'website',
   ogUrl: 'https://yevroprotokol.uz',
   ogImage: 'https://yevroprotokol.uz/og-image.jpg',
