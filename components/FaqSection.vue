@@ -15,14 +15,10 @@ const toggle = (i: number) => {
 </script>
 
 <template>
-  <section id="faq" class="py-20 md:py-28 bg-gray-50 scroll-mt-20">
+  <section id="faq" class="py-10 md:py-14 bg-white scroll-mt-20">
     <div class="container-xl">
-      <div class="text-center mb-14">
-        <span class="section-tag">FAQ</span>
+      <div class="text-center mb-8">
         <h2 class="section-heading mb-4">Ko'p So'raladigan Savollar</h2>
-        <p class="section-sub max-w-xl mx-auto">
-          Yevroprotokol haqida eng ko'p beriladigan savollarga aniq javoblar.
-        </p>
       </div>
 
       <div class="max-w-3xl mx-auto space-y-3">
@@ -33,12 +29,12 @@ const toggle = (i: number) => {
           :class="openIndex === i ? 'border-primary-200 shadow-sm' : 'border-gray-100'"
         >
           <button
-            class="w-full text-left px-6 py-5 flex items-start justify-between gap-4 cursor-pointer group"
+            class="w-full text-left px-4 sm:px-6 py-4 flex items-start justify-between gap-3 cursor-pointer group"
             @click="toggle(i)"
             :aria-expanded="openIndex === i"
           >
             <span
-              class="font-semibold text-gray-900 text-base leading-snug group-hover:text-primary-700 transition-colors"
+              class="font-semibold text-gray-900 text-sm sm:text-base leading-snug group-hover:text-primary-700 transition-colors"
               :class="{ 'text-primary-700': openIndex === i }"
             >
               {{ faq.question }}
@@ -66,7 +62,7 @@ const toggle = (i: number) => {
               transition: 'max-height 0.3s ease',
             }"
           >
-            <div class="px-6 pb-6 text-gray-600 text-sm leading-relaxed border-t border-gray-100 pt-4">
+            <div class="px-4 sm:px-6 pb-5 text-gray-600 text-sm leading-relaxed border-t border-gray-100 pt-3">
               {{ faq.answer }}
             </div>
           </div>

@@ -4,10 +4,10 @@ const activeSection = ref('hero')
 
 const navLinks = [
   { href: '#hero', label: 'Asosiy' },
-  { href: '#about', label: 'Biz haqimizda' },
-  { href: '#services', label: 'Xizmatlar' },
+  { href: '#services', label: 'Bizning xizmatlar' },
+  { href: '#conditions', label: 'Yevroprotokol shartlari' },
   { href: '#faq', label: 'Savollar' },
-  { href: '#contact', label: 'Kontakt' },
+  { href: '#cta', label: 'Aloqa' },
 ]
 
 const sectionIds = navLinks.map((l) => l.href.replace('#', ''))
@@ -43,7 +43,7 @@ const closeMenu = () => { isMenuOpen.value = false }
           <span
             class="bg-gradient-to-r from-black via-blue-700 to-blue-600 bg-clip-text text-transparent"
           >
-            evroprotakol
+            evroprotokol
           </span>
           <span
             class="bg-gradient-to-r from-yellow-600 via-yellow-400 to-yellow-700 bg-clip-text text-transparent"
@@ -119,7 +119,7 @@ const closeMenu = () => { isMenuOpen.value = false }
               d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
             />
           </svg>
-          <span class="hidden xs:inline">+998 99 201 41 41</span>
+          <span class="hidden sm:inline">+998 99 201 41 41</span>
         </a>
 
         <button

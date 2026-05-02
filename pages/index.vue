@@ -86,11 +86,9 @@ useHead({
 <template>
   <div>
     <HeroSection />
-    <AboutSection />
-    <HowItWorks />
-    <!-- <UseCases /> -->
+    <ServicesSection />
+    <ConditionsSection />
     <FaqSection />
-    <TestimonialsSection />
     <CtaSection />
   </div>
 </template>

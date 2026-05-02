@@ -2,12 +2,7 @@
   <section id="services" class="py-20 md:py-28 bg-white scroll-mt-20">
     <div class="container-xl">
       <div class="text-center mb-16">
-        <span class="section-tag">Jarayon</span>
         <h2 class="section-heading mb-4">Qanday Ishlaydi?</h2>
-        <p class="section-sub max-w-2xl mx-auto">
-          Avtohalokat hujjatini rasmiylashtirishga atigi <strong>4 qadam</strong> — barchasi
-          telefoningizdan, hech qanday kutish va politsiyasiz.
-        </p>
       </div>
 
       <div class="relative">
@@ -164,29 +159,29 @@ onMounted(() => { timer = setInterval(next, 4000) })
 onUnmounted(() => clearInterval(timer))
 const steps = [
   {
-    title: "Ma'lumot Kiriting",
-    desc: "Haydovchilik guvohnomasi, avtomobil raqami va hodisa joyini kiriting.",
+    title: 'Hodisa joyiga borish',
+    desc: "Mutaxassisimiz darhol hodisa joyiga boradi, fotosuratlar oladi, sxema chizadi va yevroprotokol blankini to'ldiradi.",
     iconPath: `<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-      d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>`,
+      d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>`,
   },
   {
-    title: 'Voqeani Tasvirlab Bering',
-    desc: "Zararlangan joylarni fotosuratga oling va hodisa sxemasini chizing.",
+    title: 'Narkologik tekshiruv',
+    desc: "Har ikkala haydovchi belgilangan narkologik muassasada alkogol va giyohvand moddalar testidan o'tkaziladi.",
     iconPath: `<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-      d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"/>
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"/>`,
+      d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/>`,
   },
   {
-    title: 'Ikkinchi Tomon Imzolaydi',
-    desc: "Ikkinchi haydovchi ma'lumotlarni tekshiradi va raqamli imzo qo'yadi.",
+    title: "Zararni baholash",
+    desc: "Mutaxassis avtomobillarga yetkazilgan moddiy zararni ko'zdan kechiradi va rasmiy dalolatnoma tuzadi.",
     iconPath: `<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-      d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"/>`,
+      d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"/>`,
   },
   {
-    title: 'Hujjatni Oling',
-    desc: "Tayyor PDF hujjat elektron pochtangizga yuboriladi va sug'urtaga taqdim etiladi.",
+    title: "Sug'urtaga topshirish",
+    desc: "Barcha hujjatlar tayyor bo'lgach, ikki haydovchini sug'urta kompaniyasiga olib boramiz va hujjatlarni birga topshiramiz.",
     iconPath: `<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-      d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>`,
+      d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>`,
   },
 ]
 </script>

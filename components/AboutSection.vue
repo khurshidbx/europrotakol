@@ -4,8 +4,8 @@
 
       <!-- Header -->
       <div class="text-center mb-16">
-        <span class="section-tag">Biz haqimizda</span>
-        <h2 class="section-heading mb-4">Nima Uchun Bizni Tanlashadi?</h2>
+        <!-- <span class="section-tag">Biz haqimizda</span> -->
+        <h2 class="section-heading mb-4">Biz haqimizda</h2>
         <p class="section-sub max-w-2xl mx-auto">
           Evroprotakol24 — O'zbekiston haydovchilari uchun yaratilgan, tez va ishonchli
           yo'l-transport hodisasini rasmiylashtirishga yordam beruvchi xizmat.
@@ -37,27 +37,6 @@
         </div>
       </div>
 
-      <!-- Values row -->
-      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
-        <div
-          v-for="val in values"
-          :key="val.title"
-          class="relative text-center group rounded-2xl px-6 py-8 overflow-hidden"
-          style="background: #1e3a8a"
-        >
-          <div
-            class="absolute inset-0"
-            style="background-image: radial-gradient(circle at 20% 40%, #60a5fa44 0%, transparent 60%), radial-gradient(circle at 80% 70%, #f9731633 0%, transparent 50%)"
-          />
-          <div class="relative z-10">
-            <div class="text-4xl mb-3 transition-transform duration-300 group-hover:scale-110 inline-block">
-              {{ val.emoji }}
-            </div>
-            <h3 class="font-bold text-white mb-2">{{ val.title }}</h3>
-            <p class="text-blue-200 text-sm leading-relaxed">{{ val.desc }}</p>
-          </div>
-        </div>
-      </div>
 
     </div>
   </section>
@@ -95,21 +74,4 @@ const aboutItems = [
   },
 ]
 
-const values = [
-  {
-    emoji: '⚡',
-    title: 'Tezlik',
-    desc: "Vaqtingiz qimmat — jarayonni imkon qadar tez hal qilamiz.",
-  },
-  {
-    emoji: '🔒',
-    title: 'Ishonchlilik',
-    desc: "Ma'lumotlaringiz xavfsiz, hujjatlar qonuniy kuchga ega.",
-  },
-  {
-    emoji: '💙',
-    title: "G'amxo'rlik",
-    desc: "Har bir mijozga individual yondashuv va to'liq yordam.",
-  },
-]
 </script>

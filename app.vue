@@ -5,7 +5,6 @@
     <main>
       <NuxtPage />
     </main>
-    <TheFooter />
     <FabButton />
   </div>
 </template>

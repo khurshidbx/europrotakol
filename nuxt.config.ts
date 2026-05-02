@@ -4,7 +4,11 @@ export default defineNuxtConfig({
 
   modules: ['@nuxtjs/tailwindcss'],
   css: ['~/assets/css/main.css'],
-
+devServer: {
+    host: '192.168.100.19',
+      port: 3000, 
+      // allowedHosts: ""
+  },
   nitro: {
     prerender: {
       crawlLinks: false,
