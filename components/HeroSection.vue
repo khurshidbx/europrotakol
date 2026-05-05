@@ -38,34 +38,37 @@
         <div class="text-center lg:text-left">
           <!-- Trust badge -->
           <div
-            class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-5 py-2.5 mb-7"
+            class="hero-fade-in inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-5 py-2.5 mb-7"
+            style="animation-delay:0ms"
           >
             <span
               class="w-2 h-2 bg-green-400 rounded-full animate-pulse flex-shrink-0"
             />
-            <span class="text-white/90 text-sm font-medium">24/7</span>
-            <span class="text-white/90 text-sm font-medium">Toshkent</span>
+            <span class="text-white/90 text-sm font-medium">{{ tr.hero.badge1 }}</span>
+            <span class="text-white/90 text-sm font-medium">{{ tr.hero.badge2 }}</span>
           </div>
 
           <!-- H1 -->
           <h1
-            class="text-2xl sm:text-4xl lg:text-5xl xl:text-6xl font-extrabold text-white mb-4 leading-[1.15] tracking-tight"
+            class="hero-fade-up text-2xl sm:text-4xl lg:text-5xl xl:text-6xl font-extrabold text-white mb-4 leading-[1.15] tracking-tight"
+            style="animation-delay:100ms"
           >
-            <span class="text-orange-400">Yevroprotokol</span>
+            <span class="text-orange-400">{{ tr.hero.h1a }}</span>
             <br />
-            15 daqiqada yetib boramiz.
+            {{ tr.hero.h1b }}
           </h1>
 
           <p
-            class="text-base md:text-xl text-blue-100 mb-6 leading-relaxed max-w-xl mx-auto lg:mx-0"
+            class="hero-fade-up text-base md:text-xl text-blue-100 mb-6 leading-relaxed max-w-xl mx-auto lg:mx-0"
+            style="animation-delay:200ms"
           >
-            <!-- <strong class="text-white font-bold">15 daqiqada.</strong> -->
-            Vaqtingizni va Sog'ligingizni asrang
+            {{ tr.hero.sub }}
           </p>
 
           <!-- CTA -->
           <div
-            class="flex flex-wrap gap-4 justify-center lg:justify-start mb-10"
+            class="hero-fade-up flex flex-wrap gap-4 justify-center lg:justify-start mb-10"
+            style="animation-delay:300ms"
           >
             <a
               href="#how-it-works"
@@ -90,13 +93,13 @@
                   d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
                 />
               </svg>
-              Qanday ishlaydi?
+              {{ tr.hero.cta }}
             </a>
           </div>
         </div>
 
         <!-- Right: illustration -->
-        <div class="flex items-center justify-center lg:justify-end">
+        <div class="hero-slide-in flex items-center justify-center lg:justify-end" style="animation-delay:250ms">
           <div class="relative w-full max-w-lg lg:max-w-none">
             <!-- Glow effect behind image -->
             <div
@@ -159,6 +162,8 @@
 </template>
 
 <script setup lang="ts">
+const { tr } = useLang()
+
 const trustSignals = ["Qonuniy hujjat", "24/7 ishlaydi", "15 daqiqada tayyor"];
 
 const stats = [

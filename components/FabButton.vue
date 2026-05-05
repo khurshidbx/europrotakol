@@ -1,6 +1,6 @@
 <template>
   <a
-    href="tel:+998992014141"
+    href="tel:+998701648575"
     aria-label="Qo'ng'iroq qilish"
     class="fixed bottom-16 right-6 z-50 flex items-center justify-center w-14 h-14 rounded-full bg-primary-700 text-white shadow-xl shadow-primary-900/40 hover:bg-primary-800 hover:scale-110 active:scale-95 transition-transform duration-200"
   >

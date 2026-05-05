@@ -6,7 +6,7 @@
         <!-- Brand -->
         <span class="font-black italic text-xl tracking-tight">
           <span class="bg-gradient-to-r from-white via-blue-300 to-blue-400 bg-clip-text text-transparent">
-            evroprotakol
+            evroprotokol
           </span>
           <span class="bg-gradient-to-r from-yellow-400 via-yellow-300 to-yellow-500 bg-clip-text text-transparent">
             24
@@ -18,7 +18,7 @@
 
         <!-- Telegram -->
         <a
-          href="https://t.me/evroprotakol24"
+          href="https://t.me/evroprotokol24"
           target="_blank"
           rel="noopener"
           class="flex items-center gap-2 text-gray-300 hover:text-white transition-colors text-sm font-medium"
@@ -32,7 +32,7 @@
 
         <!-- Instagram -->
         <a
-          href="https://instagram.com/evroprotakol24"
+          href="https://instagram.com/evroprotokol24"
           target="_blank"
           rel="noopener"
           class="flex items-center gap-2 text-gray-300 hover:text-white transition-colors text-sm font-medium"
@@ -49,7 +49,7 @@
 
         <!-- Phone -->
         <a
-          href="tel:+998992014141"
+          href="tel:+998701648575"
           class="flex items-center gap-2 text-white hover:text-blue-300 transition-colors font-bold text-base"
         >
           <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -57,7 +57,7 @@
               d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
             />
           </svg>
-          +998 99 201 41 41
+          +998 70 164 85 75
         </a>
 
       </div>

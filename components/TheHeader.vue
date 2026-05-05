@@ -1,16 +1,18 @@
 <script setup lang="ts">
 const isMenuOpen = ref(false)
 const activeSection = ref('hero')
+const { tr } = useLang()
 
-const navLinks = [
-  { href: '#hero', label: 'Asosiy' },
-  { href: '#services', label: 'Bizning xizmatlar' },
-  { href: '#conditions', label: 'Yevroprotokol shartlari' },
-  { href: '#faq', label: 'Savollar' },
-  { href: '#cta', label: 'Aloqa' },
-]
+const navHrefs = ['#hero', '#services', '#conditions', '#faq', '#cta']
+const navLinks = computed(() => [
+  { href: '#hero',       label: tr.value.nav.home },
+  { href: '#services',   label: tr.value.nav.services },
+  { href: '#conditions', label: tr.value.nav.conditions },
+  { href: '#faq',        label: tr.value.nav.faq },
+  { href: '#cta',        label: tr.value.nav.contact },
+])
 
-const sectionIds = navLinks.map((l) => l.href.replace('#', ''))
+const sectionIds = navHrefs.map((l) => l.replace('#', ''))
 const observers: IntersectionObserver[] = []
 
 onMounted(() => {
@@ -78,11 +80,13 @@ const closeMenu = () => { isMenuOpen.value = false }
         </a>
       </nav>
 
-      <!-- Phone number (desktop) -->
-      <a
-        href="tel:+998992014141"
-        class="hidden lg:flex items-center gap-2.5 bg-primary-700 hover:bg-primary-800 text-white px-5 py-2.5 rounded-xl font-bold text-base transition-colors shadow-sm"
-      >
+      <!-- Lang + Phone (desktop) -->
+      <div class="hidden lg:flex items-center gap-3">
+        <LangSwitcher />
+        <a
+          href="tel:+998 70-164-85-75"
+          class="flex items-center gap-2.5 bg-primary-700 hover:bg-primary-800 text-white px-5 py-2.5 rounded-xl font-bold text-base transition-colors shadow-sm"
+        >
         <svg
           class="w-5 h-5"
           fill="none"
@@ -96,13 +100,15 @@ const closeMenu = () => { isMenuOpen.value = false }
             d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
           />
         </svg>
-        +998 99 201 41 41
-      </a>
+        +998 70 164 85 75
+        </a>
+      </div>
 
-      <!-- Mobile right side: phone + hamburger -->
+      <!-- Mobile right side: lang + phone + hamburger -->
       <div class="flex lg:hidden items-center gap-2">
+        <LangSwitcher />
         <a
-          href="tel:+998992014141"
+          href="tel:+998701648575"
           class="flex items-center gap-1.5 bg-primary-700 text-white px-3 py-2 rounded-lg font-bold text-sm"
           aria-label="Qo'ng'iroq qilish"
         >
@@ -119,7 +125,7 @@ const closeMenu = () => { isMenuOpen.value = false }
               d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
             />
           </svg>
-          <span class="hidden sm:inline">+998 99 201 41 41</span>
+          <span class="hidden sm:inline">+998 70 164 85 75</span>
         </a>
 
         <button
@@ -159,9 +165,17 @@ const closeMenu = () => { isMenuOpen.value = false }
       </div>
     </div>
 
+    <!-- Backdrop -->
+    <div
+      v-if="isMenuOpen"
+      class="lg:hidden fixed inset-0 top-16 z-40 bg-black/30"
+      @click="closeMenu"
+      aria-hidden="true"
+    />
+
     <!-- Mobile Menu -->
     <div
-      class="lg:hidden overflow-hidden bg-white shadow-lg"
+      class="lg:hidden overflow-hidden bg-white shadow-lg relative z-50"
       :style="{
         maxHeight: isMenuOpen ? '400px' : '0px',
         borderTop: isMenuOpen ? '1px solid #f3f4f6' : 'none',
@@ -190,7 +204,7 @@ const closeMenu = () => { isMenuOpen.value = false }
           {{ link.label }}
         </a>
         <a
-          href="tel:+998992014141"
+          href="tel:+998701648575"
           @click="closeMenu"
           class="flex items-center justify-center gap-2 bg-primary-700 text-white px-4 py-3 rounded-xl font-bold text-base mt-3"
         >
@@ -199,7 +213,7 @@ const closeMenu = () => { isMenuOpen.value = false }
               d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
             />
           </svg>
-          +998 99 201 41 41
+          +998 70-164-85-75
         </a>
       </nav>
     </div>

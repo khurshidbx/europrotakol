@@ -1,14 +1,12 @@
 <script setup lang="ts">
-import type { FaqItem } from '~/composables/useFaqData'
+const props = defineProps<{ limit?: number }>()
 
-const props = defineProps<{
-  limit?: number
-}>()
-
-const allFaqs = useFaqData()
-const faqs = computed(() => (props.limit ? allFaqs.slice(0, props.limit) : allFaqs))
+const { tr } = useLang()
+const faqs = computed(() => {
+  const items = tr.value.faq.items
+  return props.limit ? items.slice(0, props.limit) : items
+})
 const openIndex = ref<number | null>(0)
-
 const toggle = (i: number) => {
   openIndex.value = openIndex.value === i ? null : i
 }
@@ -17,14 +15,15 @@ const toggle = (i: number) => {
 <template>
   <section id="faq" class="py-10 md:py-14 bg-white scroll-mt-20">
     <div class="container-xl">
-      <div class="text-center mb-8">
-        <h2 class="section-heading mb-4">Ko'p So'raladigan Savollar</h2>
+      <div v-animate class="text-center mb-8">
+        <h2 class="section-heading mb-4">{{ tr.faq.heading }}</h2>
       </div>
 
       <div class="max-w-3xl mx-auto space-y-3">
         <div
           v-for="(faq, i) in faqs"
           :key="faq.question"
+          v-animate="{ delay: i * 60 }"
           class="bg-white rounded-2xl border overflow-hidden transition-all duration-200"
           :class="openIndex === i ? 'border-primary-200 shadow-sm' : 'border-gray-100'"
         >
