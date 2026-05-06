@@ -51,7 +51,7 @@
 const testimonials = [
   {
     quote:
-      "Avval politsiyani kutib 3 soatimni yo'qotardim. Endi 15 daqiqada hamma narsa tayyor. Bu xizmat hayotimni osonlashtirdi!",
+      "Avval GAI ni kutib 3 soatimni yo'qotardim. Endi 15 daqiqada hamma narsa tayyor. Bu xizmat hayotimni osonlashtirdi!",
     name: 'Jasur Toshmatov',
     location: 'Toshkent',
     date: 'Mart 2025',

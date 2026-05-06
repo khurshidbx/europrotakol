@@ -41,7 +41,7 @@ const closeMenu = () => { isMenuOpen.value = false }
       <!-- Logo -->
       <NuxtLink to="/" class="flex items-center flex-shrink-0">
         <!-- <img src="../assets/IMG_1794.PNG" width="180" alt="Yevroprotokol" class="h-10 md:h-12 w-auto object-contain" /> -->
-        <span class="font-black italic text-2xl md:text-3xl tracking-tight">
+        <span class="font-black italic text-xl xl:text-2xl tracking-tight">
           <span
             class="bg-gradient-to-r from-black via-blue-700 to-blue-600 bg-clip-text text-transparent"
           >
@@ -56,13 +56,13 @@ const closeMenu = () => { isMenuOpen.value = false }
       </NuxtLink>
 
       <!-- Desktop Nav -->
-      <nav class="hidden lg:flex items-center gap-8">
+      <nav class="hidden xl:flex items-center gap-5">
         <a
           v-for="link in navLinks"
           :key="link.href"
           :href="link.href"
           :class="[
-            'relative font-semibold text-base transition-colors duration-200 group',
+            'relative font-semibold text-sm xl:text-base transition-colors duration-200 group',
             activeSection === link.href.replace('#', '')
               ? 'text-primary-700'
               : 'text-gray-500 hover:text-primary-700',
@@ -81,10 +81,10 @@ const closeMenu = () => { isMenuOpen.value = false }
       </nav>
 
       <!-- Lang + Phone (desktop) -->
-      <div class="hidden lg:flex items-center gap-3">
+      <div class="hidden xl:flex items-center gap-3">
         <LangSwitcher />
         <a
-          href="tel:+998 70-164-85-75"
+          href="tel:+998776410641"
           class="flex items-center gap-2.5 bg-primary-700 hover:bg-primary-800 text-white px-5 py-2.5 rounded-xl font-bold text-base transition-colors shadow-sm"
         >
         <svg
@@ -100,15 +100,15 @@ const closeMenu = () => { isMenuOpen.value = false }
             d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
           />
         </svg>
-        +998 70 164 85 75
+        +998 77 641 06 41
         </a>
       </div>
 
       <!-- Mobile right side: lang + phone + hamburger -->
-      <div class="flex lg:hidden items-center gap-2">
+      <div class="flex xl:hidden items-center gap-2">
         <LangSwitcher />
         <a
-          href="tel:+998701648575"
+          href="tel:+998776410641"
           class="flex items-center gap-1.5 bg-primary-700 text-white px-3 py-2 rounded-lg font-bold text-sm"
           aria-label="Qo'ng'iroq qilish"
         >
@@ -125,7 +125,7 @@ const closeMenu = () => { isMenuOpen.value = false }
               d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
             />
           </svg>
-          <span class="hidden sm:inline">+998 70 164 85 75</span>
+          <span class="hidden sm:inline">+998 77 641 06 41</span>
         </a>
 
         <button
@@ -168,14 +168,14 @@ const closeMenu = () => { isMenuOpen.value = false }
     <!-- Backdrop -->
     <div
       v-if="isMenuOpen"
-      class="lg:hidden fixed inset-0 top-16 z-40 bg-black/30"
+      class="xl:hidden fixed inset-0 top-16 z-40 bg-black/30"
       @click="closeMenu"
       aria-hidden="true"
     />
 
     <!-- Mobile Menu -->
     <div
-      class="lg:hidden overflow-hidden bg-white shadow-lg relative z-50"
+      class="xl:hidden overflow-hidden bg-white shadow-lg relative z-50"
       :style="{
         maxHeight: isMenuOpen ? '400px' : '0px',
         borderTop: isMenuOpen ? '1px solid #f3f4f6' : 'none',
@@ -204,7 +204,7 @@ const closeMenu = () => { isMenuOpen.value = false }
           {{ link.label }}
         </a>
         <a
-          href="tel:+998701648575"
+          href="tel:+998776410641"
           @click="closeMenu"
           class="flex items-center justify-center gap-2 bg-primary-700 text-white px-4 py-3 rounded-xl font-bold text-base mt-3"
         >
@@ -213,7 +213,7 @@ const closeMenu = () => { isMenuOpen.value = false }
               d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
             />
           </svg>
-          +998 70-164-85-75
+          +998 77 641 06 41
         </a>
       </nav>
     </div>

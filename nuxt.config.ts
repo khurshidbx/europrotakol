@@ -10,6 +10,7 @@ devServer: {
       // allowedHosts: ""
   },
   nitro: {
+    preset: 'static',
     prerender: {
       crawlLinks: false,
       routes: ['/', '/faq', '/about'],

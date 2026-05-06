@@ -23,8 +23,8 @@ const organizationJsonLd = {
   logo: 'https://yevroprotokol.uz/logo.png',
   image: 'https://yevroprotokol.uz/og-image.jpg',
   description:
-    "Evroprotokol — avtohalokat DTP hujjatini politsiyasiz online rasmiylashtiramiz. Toshkent va Toshkent viloyati bo'ylab xizmat. Европротокол в Узбекистане — оформление ДТП без ГИБДД онлайн.",
-  telephone: '+998701648575',
+    "Evroprotokol — kichik DTP hujjatini GAI chaqirmasdan online rasmiylashtiramiz. Toshkent va Toshkent viloyati bo'ylab xizmat. Европротокол в Узбекистане — оформление ДТП без ГИБДД онлайн.",
+  telephone: '+998776410641',
   address: {
     '@type': 'PostalAddress',
     addressCountry: 'UZ',
@@ -44,7 +44,7 @@ const organizationJsonLd = {
   priceRange: 'Bepul / Бесплатно',
   contactPoint: {
     '@type': 'ContactPoint',
-    telephone: '+998701648575',
+    telephone: '+998776410641',
     contactType: 'customer service',
     availableLanguage: ['uz', 'ru'],
     contactOption: 'TollFree',
@@ -72,18 +72,18 @@ const websiteJsonLd = {
 useSeoMeta({
   title: 'Evroprotokol Toshkent — Европротокол Узбекистан | DTP onlayn',
   description:
-    "Evroprotokol — avtohalokat DTP politsiyasiz onlayn rasmiylashtiramiz. Toshkent 24/7. Европротокол в Узбекистане — оформление ДТП без ГИБДД онлайн. ☎ +998 70 164 85 75",
-  ogTitle: 'Evroprotokol24 — DTP politsiyasiz | Европротокол Узбекистан',
+    "evroprotokol24.uz — Услуги Европротокола. Быстрое оформление ДТП без вызова ГАИ. Kichik DTP ni GAI chaqirmasdan onlayn rasmiylashtiramiz. Toshkent 24/7. ☎ +998 77 641 06 41",
+  ogTitle: 'evroprotokol24.uz — Услуги Европротокола | DTP GAIsiz',
   ogDescription:
-    "Avtohalokat DTP hujjatini politsiyasiz online rasmiylashtiramiz. Toshkent va viloyati bo'ylab 24/7 xizmat.",
+    "Услуги Европротокола. Быстрое оформление ДТП без вызова ГАИ. Kichik DTP GAI chaqirmasdan — Toshkent 24/7.",
   ogType: 'website',
   ogUrl: 'https://yevroprotokol.uz',
   ogImage: 'https://yevroprotokol.uz/og-image.jpg',
   ogLocale: 'uz_UZ',
   twitterCard: 'summary_large_image',
-  twitterTitle: 'Evroprotokol24 — DTP politsiyasiz | Европротокол',
+  twitterTitle: 'evroprotokol24.uz — Услуги Европротокола | DTP GAIsiz',
   twitterDescription:
-    "Avtohalokat DTP hujjatini politsiyasiz rasmiylashtiramiz. Европротокол без ГИБДД.",
+    "Услуги Европротокола. Быстрое оформление ДТП без вызова ГАИ. Toshkent 24/7.",
   robots: 'index, follow',
 })
 
@@ -103,9 +103,8 @@ useHead({
         'evroprotokol blanki', 'evroprotokol namunasi', 'evroprotokol shakli',
         'evroprotokol qoidalari', 'evroprotokol online', 'evroprotokol yuklab olish',
         // UZ vaziyatga oid
-        'avtohalokat evroprotokol', 'DTP evroprotokol', 'kichik avtohalokat rasmiylastirish',
-        'politsiyasiz dtp rasmiylastirish', 'baxtsiz hodisani ozi rasmiylastirish',
-        "yo'l-transport hodisasi rasmiylastirish", 'avtohalokat hujjati',
+        'DTP evroprotokol', 'kichik DTP rasmiylastirish', 'GAIsiz DTP rasmiylastirish',
+        'GAI chaqirmasdan DTP', 'DTP hujjati online', "yo'l-transport hodisasi rasmiylastirish",
         // UZ misspellings
         'yevroprotokol', 'evrorotokol', 'evprotokol', 'evroprotokoll',
         // RU asosiy

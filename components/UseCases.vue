@@ -6,7 +6,7 @@
         <h2 class="section-heading mb-4">Qachon Yevroprotokol Qo'llaniladi?</h2>
         <p class="section-sub max-w-2xl mx-auto">
           Yevroprotokol faqat ma'lum holatlarda qonuniy amal qiladi. Quyida qachon ishlatish mumkin va
-          qachon politsiya chaqirish kerakligini aniq ko'ring.
+          qachon GAI chaqirish kerakligini aniq ko'ring.
         </p>
       </div>
 
@@ -72,7 +72,7 @@
         <div>
           <strong class="text-amber-900 font-semibold text-sm block mb-1">Muhim eslatma</strong>
           <p class="text-amber-800 text-sm leading-relaxed">
-            Shubha bo'lsa — politsiyani chaqiring! Yevroprotokol faqat ikki tomon mutlaq kelishgan
+            Shubha bo'lsa — GAI ni chaqiring! Evroprotokol faqat ikki tomon mutlaq kelishgan
             va barcha shartlar bajarilgan hollarda ishlatiladi. Noto'g'ri foydalanish qonuniy oqibatlarga olib kelishi mumkin.
           </p>
         </div>

@@ -32,19 +32,18 @@
 
     <div class="container-xl relative z-10 pt-20 pb-8 md:pt-24 md:pb-6">
       <div
-        class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center"
+        class="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-16 items-center"
       >
         <!-- Left: text -->
         <div class="text-center lg:text-left">
           <!-- Trust badge -->
           <div
-            class="hero-fade-in inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-5 py-2.5 mb-7"
+            class="hero-fade-in inline-flex items-center gap-1.5 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-2 mb-4 mt-6"
             style="animation-delay:0ms"
           >
-            <span
-              class="w-2 h-2 bg-green-400 rounded-full animate-pulse flex-shrink-0"
-            />
+            <span class="w-2 h-2 bg-green-400 rounded-full animate-pulse flex-shrink-0" />
             <span class="text-white/90 text-sm font-medium">{{ tr.hero.badge1 }}</span>
+            <span class="text-white/40 text-xs">·</span>
             <span class="text-white/90 text-sm font-medium">{{ tr.hero.badge2 }}</span>
           </div>
 
@@ -67,7 +66,7 @@
 
           <!-- CTA -->
           <div
-            class="hero-fade-up flex flex-wrap gap-4 justify-center lg:justify-start mb-10"
+            class="hero-fade-up flex flex-wrap gap-4 justify-center lg:justify-start mb-4 md:mb-10"
             style="animation-delay:300ms"
           >
             <a
@@ -116,7 +115,7 @@
             />
             <img
               src="/twocars.png"
-              alt="Yevroprotokol — ikki haydovchi avtohalokat hujjatini rasmiylashtiryapti"
+              alt="Evroprotokol — ikki haydovchi kichik DTP hujjatini GAIsiz rasmiylashtiryapti"
               class="relative w-full rounded-2xl"
               style="
                 mix-blend-mode: luminosity;

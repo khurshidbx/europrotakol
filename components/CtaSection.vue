@@ -12,6 +12,16 @@
           Hoziroq Boshlang
         </span> -->
 
+        <!-- Logo -->
+        <div v-animate class="flex justify-center mb-6">
+          <img
+            src="/main_evro_logo.png"
+            alt="Evroprotokol24 logo"
+            class="w-28 h-28 md:w-36 md:h-36 rounded-full shadow-2xl shadow-black/40 object-contain bg-white"
+            loading="lazy"
+          />
+        </div>
+
         <h2 v-animate class="text-3xl md:text-5xl font-extrabold text-white mb-6 leading-tight">
           {{ tr.cta.heading }}
         </h2>
@@ -24,7 +34,7 @@
         <div v-animate="{ delay: 200 }" class="flex flex-wrap gap-4 justify-center mb-12">
           <!-- Phone -->
           <a
-            href="tel:+998 70-164-85-75"
+            href="tel:+998776410641"
             class="btn-cta !text-sm !px-5 !py-3 sm:!text-lg sm:!px-8 sm:!py-4 !rounded-xl"
           >
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">

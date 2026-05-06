@@ -64,11 +64,11 @@ const values = [
           <h2 class="section-heading mb-6">Nima Uchun Bu Xizmatni Yaratdik?</h2>
           <p class="text-gray-600 text-lg leading-relaxed mb-6">
             O'zbekistonda har yili minglab kichik yo'l-transport hodisalari sodir bo'ladi. Ko'p haydovchilar
-            an'anaviy jarayonda soatlab politsiya kutib, ishdan qoladi va ortiqcha stress boshidan kechiradi.
+            an'anaviy jarayonda soatlab GAI kutib, ishdan qoladi va ortiqcha stress boshidan kechiradi.
           </p>
           <p class="text-gray-600 text-lg leading-relaxed">
-            Yevroprotokol xizmati bu muammoni hal qilish uchun yaratildi — <strong>avtohalokat hujjati</strong>ni
-            rasmiylashtirishni sodda, tez va <strong>bepul</strong> qilish.
+            Evroprotokol xizmati bu muammoni hal qilish uchun yaratildi — <strong>kichik DTP hujjati</strong>ni
+            GAI chaqirmasdan, sodda, tez va <strong>bepul</strong> rasmiylashtirishni ta'minlash.
           </p>
         </div>
       </div>
