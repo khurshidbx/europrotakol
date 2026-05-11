@@ -229,7 +229,7 @@ const ru = {
 const all = { uz, ru }
 
 export const useLang = () => {
-  const lang = useState<Lang>('app:lang', () => 'uz')
+  const lang = useState<Lang>('app:lang', () => 'ru')
   const setLang = (l: Lang) => { lang.value = l }
   const tr = computed(() => all[lang.value])
   return { lang, setLang, tr }

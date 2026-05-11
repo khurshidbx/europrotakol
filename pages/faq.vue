@@ -17,12 +17,12 @@ useSeoMeta({
     "Yevroprotokol haqida eng ko'p beriladigan savollarga to'liq javoblar: qanday qo'llaniladi, qonuniy kuchi, to'ldirish tartibi va boshqalar.",
   ogTitle: "Ko'p So'raladigan Savollar — Yevroprotokol",
   ogDescription: 'Yevroprotokol xizmati haqida barcha savollaringizga javoblar.',
-  ogUrl: 'https://yevroprotokol.uz/faq',
+  ogUrl: 'https://www.evroprotokol24.uz/faq',
   robots: 'index, follow',
 })
 
 useHead({
-  link: [{ rel: 'canonical', href: 'https://yevroprotokol.uz/faq' }],
+  link: [{ rel: 'canonical', href: 'https://www.evroprotokol24.uz/faq' }],
   script: [{ type: 'application/ld+json', innerHTML: JSON.stringify(faqJsonLd) }],
 })
 </script>
@@ -66,7 +66,7 @@ useHead({
             </svg>
             Qo'ng'iroq Qilish
           </a>
-          <a href="mailto:info@yevroprotokol.uz" class="btn-primary !bg-gray-100 !text-gray-800 !shadow-none hover:!bg-gray-200">
+          <a href="mailto:info@www.evroprotokol24.uz" class="btn-primary !bg-gray-100 !text-gray-800 !shadow-none hover:!bg-gray-200">
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                 d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"

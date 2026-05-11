@@ -24,7 +24,7 @@ devServer: {
       viewport: 'width=device-width, initial-scale=1',
       htmlAttrs: { lang: 'uz' },
       link: [
-        { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' },
+        { rel: 'icon', type: 'image/png', href: '/main_evro_logo.png' },
       ],
     },
   },

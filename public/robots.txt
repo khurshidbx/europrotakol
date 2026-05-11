@@ -3,4 +3,4 @@ Allow: /
 Disallow: /search
 Disallow: /api/
 
-Sitemap: https://yevroprotokol.uz/sitemap.xml
+Sitemap: https://www.evroprotokol24.uz/sitemap.xml

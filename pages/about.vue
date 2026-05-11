@@ -4,12 +4,12 @@ useSeoMeta({
   description:
     "Yevroprotokol — O'zbekiston haydovchilari uchun avtohalokat hujjatini onlayn rasmiylashtirishga yordam beruvchi rasmiy xizmat. Missiya, jamoa va qiymatlar.",
   ogTitle: "Biz Haqimizda — Yevroprotokol",
-  ogUrl: 'https://yevroprotokol.uz/about',
+  ogUrl: 'https://www.evroprotokol24.uz/about',
   robots: 'index, follow',
 })
 
 useHead({
-  link: [{ rel: 'canonical', href: 'https://yevroprotokol.uz/about' }],
+  link: [{ rel: 'canonical', href: 'https://www.evroprotokol24.uz/about' }],
 })
 
 const values = [

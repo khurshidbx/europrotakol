@@ -19,9 +19,9 @@ const organizationJsonLd = {
   '@type': 'LocalBusiness',
   name: 'Evroprotokol24',
   alternateName: ['Европротокол24', 'Yevroprotokol24'],
-  url: 'https://yevroprotokol.uz',
-  logo: 'https://yevroprotokol.uz/logo.png',
-  image: 'https://yevroprotokol.uz/og-image.jpg',
+  url: 'https://www.evroprotokol24.uz',
+  logo: 'https://www.evroprotokol24.uz/logo.png',
+  image: 'https://www.evroprotokol24.uz/og-image.jpg',
   description:
     "Evroprotokol — kichik DTP hujjatini GAI chaqirmasdan online rasmiylashtiramiz. Toshkent va Toshkent viloyati bo'ylab xizmat. Европротокол в Узбекистане — оформление ДТП без ГИБДД онлайн.",
   telephone: '+998776410641',
@@ -60,39 +60,40 @@ const websiteJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'WebSite',
   name: 'Evroprotokol24',
-  url: 'https://yevroprotokol.uz',
+  url: 'https://www.evroprotokol24.uz',
   inLanguage: ['uz', 'ru'],
   potentialAction: {
     '@type': 'SearchAction',
-    target: 'https://yevroprotokol.uz/search?q={search_term_string}',
+    target: 'https://www.evroprotokol24.uz/search?q={search_term_string}',
     'query-input': 'required name=search_term_string',
   },
 }
 
 useSeoMeta({
-  title: 'Evroprotokol Toshkent — Европротокол Узбекистан | DTP onlayn',
+  title: 'Европротокол Ташкент | Evroprotokol 24 — ДТП без ГАИ за 15 минут',
   description:
-    "evroprotokol24.uz — Услуги Европротокола. Быстрое оформление ДТП без вызова ГАИ. Kichik DTP ni GAI chaqirmasdan onlayn rasmiylashtiramiz. Toshkent 24/7. ☎ +998 77 641 06 41",
-  ogTitle: 'evroprotokol24.uz — Услуги Европротокола | DTP GAIsiz',
+    "Европротокол в Узбекистане — оформление ДТП без вызова ГАИ. Европротокол Ташкент, европротокол 24. Evroprotokol Toshkent 24/7. +998 77 641 06 41",
+  ogTitle: 'Европротокол Ташкент | Evroprotokol 24 — ДТП без ГАИ',
   ogDescription:
-    "Услуги Европротокола. Быстрое оформление ДТП без вызова ГАИ. Kichik DTP GAI chaqirmasdan — Toshkent 24/7.",
+    "Европротокол в Узбекистане — быстрое оформление ДТП без ГАИ. Европротокол 24, Ташкент. Evroprotokol Toshkent 24/7.",
   ogType: 'website',
-  ogUrl: 'https://yevroprotokol.uz',
-  ogImage: 'https://yevroprotokol.uz/og-image.jpg',
-  ogLocale: 'uz_UZ',
+  ogUrl: 'https://www.evroprotokol24.uz',
+  ogImage: 'https://www.evroprotokol24.uz/og-image.jpg',
+  ogLocale: 'ru_RU',
+  ogLocaleAlternate: ['uz_UZ'],
   twitterCard: 'summary_large_image',
-  twitterTitle: 'evroprotokol24.uz — Услуги Европротокола | DTP GAIsiz',
+  twitterTitle: 'Европротокол Ташкент | Evroprotokol 24 — ДТП без ГАИ',
   twitterDescription:
-    "Услуги Европротокола. Быстрое оформление ДТП без вызова ГАИ. Toshkent 24/7.",
+    "Европротокол в Узбекистане — оформление ДТП без ГАИ. Европротокол 24, Ташкент 24/7.",
   robots: 'index, follow',
 })
 
 useHead({
   link: [
-    { rel: 'canonical', href: 'https://yevroprotokol.uz' },
-    { rel: 'alternate', hreflang: 'uz', href: 'https://yevroprotokol.uz' },
-    { rel: 'alternate', hreflang: 'ru', href: 'https://yevroprotokol.uz' },
-    { rel: 'alternate', hreflang: 'x-default', href: 'https://yevroprotokol.uz' },
+    { rel: 'canonical', href: 'https://www.evroprotokol24.uz' },
+    { rel: 'alternate', hreflang: 'uz', href: 'https://www.evroprotokol24.uz' },
+    { rel: 'alternate', hreflang: 'ru', href: 'https://www.evroprotokol24.uz' },
+    { rel: 'alternate', hreflang: 'x-default', href: 'https://www.evroprotokol24.uz' },
   ],
   meta: [
     {
