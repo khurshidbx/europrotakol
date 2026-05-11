@@ -1,5 +1,6 @@
 export default defineNuxtPlugin((nuxtApp) => {
   nuxtApp.vueApp.directive('animate', {
+    getSSRProps: () => ({}),
     mounted(el, { value }) {
       const type: string = value?.type ?? 'up'
       const delay: number = value?.delay ?? 0
