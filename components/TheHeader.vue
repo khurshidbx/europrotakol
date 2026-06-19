@@ -2,6 +2,7 @@
 const isMenuOpen = ref(false)
 const activeSection = ref('hero')
 const { tr } = useLang()
+const { reportConversion } = useConversion()
 
 const navHrefs = ['#hero', '#services', '#conditions', '#faq', '#cta']
 const navLinks = computed(() => [
@@ -85,6 +86,7 @@ const closeMenu = () => { isMenuOpen.value = false }
         <LangSwitcher />
         <a
           href="tel:+998776410641"
+          @click="reportConversion"
           class="flex items-center gap-2.5 bg-primary-700 hover:bg-primary-800 text-white px-5 py-2.5 rounded-xl font-bold text-base transition-colors shadow-sm"
         >
         <svg
@@ -109,6 +111,7 @@ const closeMenu = () => { isMenuOpen.value = false }
         <LangSwitcher />
         <a
           href="tel:+998776410641"
+          @click="reportConversion"
           class="flex items-center gap-1.5 bg-primary-700 text-white px-3 py-2 rounded-lg font-bold text-sm"
           aria-label="Qo'ng'iroq qilish"
         >
@@ -205,7 +208,7 @@ const closeMenu = () => { isMenuOpen.value = false }
         </a>
         <a
           href="tel:+998776410641"
-          @click="closeMenu"
+          @click="closeMenu(); reportConversion()"
           class="flex items-center justify-center gap-2 bg-primary-700 text-white px-4 py-3 rounded-xl font-bold text-base mt-3"
         >
           <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
