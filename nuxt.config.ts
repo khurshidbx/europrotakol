@@ -25,7 +25,23 @@ devServer: {
       htmlAttrs: { lang: 'uz' },
       link: [
         { rel: 'icon', type: 'image/png', href: '/main_evro_logo.png' },
+        { rel: 'shortcut icon', href: '/main_evro_logo.png' },
+        { rel: 'apple-touch-icon', href: '/main_evro_logo.png' },
       ],
+      script: [
+        {
+          src: 'https://www.googletagmanager.com/gtag/js?id=AW-18247118933',
+          async: true
+        },
+        {
+          innerHTML: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'AW-18247118933');
+          `
+        }
+      ]
     },
   },
 })
