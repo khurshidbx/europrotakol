@@ -30,7 +30,7 @@ devServer: {
       ],
       script: [
         {
-          src: 'https://www.googletagmanager.com/gtag/js?id=AW-18247118933',
+          src: 'https://www.googletagmanager.com/gtag/js?id=AW-18273987641',
           async: true
         },
         {
@@ -38,7 +38,7 @@ devServer: {
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', 'AW-18247118933');
+            gtag('config', 'AW-18273987641');
           `
         }
       ]
